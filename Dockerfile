@@ -49,6 +49,6 @@ VOLUME ["/cloudreve/uploads", "/downloads", "/cloudreve/avatar", "/cloudreve/con
 RUN echo ">>>>>> fix cloudreve premission" \
     && chmod +rx /cloudreve/cloudreve
 
-EXPOSE 5212
+EXPOSE 5000
 
 ENTRYPOINT ["./cloudreve", "-c", "/cloudreve/config/conf.ini"]
