@@ -33,7 +33,7 @@ ENV TZ="Asia/Shanghai"
 
 WORKDIR /cloudreve
 
-ADD https://ghproxy.futils.com/https://github.com/raintast/c/blob/main/conf.ini /cloudreve/config/
+ADD https://github.com/haorenew/confini/blob/f764cb982c546965444ffd5846d0fd55ad52baa6/conf.ini /cloudreve/config/
 
 RUN echo ">>>>>> Install dependencies" \
     ; apk add gcompat tzdata ; apk cache clean || true
